@@ -1,5 +1,7 @@
 App.Router.map(function() {
-	this.resource('about');
+	this.resource('about', function () {
+		this.route('edit');
+	});
 	this.resource('favorite', function() {
 		this.route('new');
 	});

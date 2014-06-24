@@ -15,5 +15,10 @@ window.App = Ember.Application.create();
 // });
 // person.say('Hello');
 
+<<<<<<< HEAD
 // person.set('name', "Grant");
 // console.log(person.name);
+=======
+person.set('name', "Grant");
+console.log(person.get('name'));
+>>>>>>> 07f66f8338ebc9ca2da0a3930a4d5e68145eae9e

@@ -5,13 +5,16 @@ App.Router.map(function() {
 	});
 });
 
-var displayArray = ['hello', 'this', 'is', 'an', 'array'];
+var displayArray = [
+	{ title: 'hello' },
+	{ title: 'this' },
+	{ title: 'is' },
+	{ title: 'an array' }
+];
 
 App.AboutRoute = Ember.Route.extend({
 	model: function() {
-		return [{
-			title: displayArray
-		}];
+		return displayArray;
 	}
 });
 

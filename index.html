@@ -25,7 +25,11 @@
   </script>
   <script type="text/x-handlebars" data-template-name="about">
     <h1>This is the About page!</h1>
-    {{#each}} {{title}} {{/each}}
+    <ul>
+    {{#each}}
+    <li>{{title}}</li>
+    {{/each}}
+    </ul>
   </script>
   <script type="text/x-handlebars" data-template-name="favorite">
       <h1>This is the {{#link-to 'favorite.new'}}Favorite page{{/link-to}}!</h1>

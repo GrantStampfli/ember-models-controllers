@@ -20,8 +20,9 @@ App.AboutRoute = Ember.Route.extend({
 	}
 });
 
-// App.AboutRoute = Ember.Route.extend({
-// 	redirect: function() {
-// 		this.transitionTo('about');
-// 	}
-// });
+App.AboutEditRoute = Ember.Route.extend({
+	redirect: function() {
+
+		return this.transitionTo('about.edit');
+	}
+});

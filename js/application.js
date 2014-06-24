@@ -16,4 +16,4 @@ var person = App.Person.create({
 person.say('Hello');
 
 person.set('name', "Grant");
-console.log(person.name);
+console.log(person.get('name'));

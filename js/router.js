@@ -1,6 +1,6 @@
 App.Router.map(function() {
 	this.resource('about', function () {
-		this.route('edit');
+		this.route('edit', {path: '/:id/edit'});
 	});
 	this.resource('favorite', function() {
 		this.route('new');
@@ -8,10 +8,10 @@ App.Router.map(function() {
 });
 
 var displayArray = [
-	{ title: 'hello' },
-	{ title: 'this' },
-	{ title: 'is' },
-	{ title: 'an array' }
+	{ id: 1, title: 'hello' },
+	{ id: 2, title: 'this' },
+	{ id: 3, title: 'is' },
+	{ id: 4, title: 'an array' }
 ];
 
 App.AboutRoute = Ember.Route.extend({

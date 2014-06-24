@@ -27,15 +27,14 @@
     <h1>This is the About page!</h1>
     <ul>
     {{#each}}
-    <li>{{#link-to 'about.edit'}}{{title}}{{/link-to}}</li>
+    <li>{{#link-to 'about.edit' id}}{{title}}{{/link-to}}</li>
 
     {{/each}}
     {{outlet}}
     </ul>
   </script>
   <script type="text/x-handlebars" data-template-name="about/edit">
-      {{#each}}{{input type="text" value=title}}{{/each}}
-
+      {{input type="text" value=title}}
   </script>
   
   <script type="text/x-handlebars" data-template-name="favorite">

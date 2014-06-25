@@ -1,8 +1,6 @@
 App.Router.map(function() {
-	this.resource('about', function () {
-		this.route('edit', {path: '/edit'});
-		this.route('edit', {path: '/edit/:id'});
-	});
+	this.route('about');
+	this.route('edit', {path: '/edit/:id'});
 	this.resource('favorite', function() {
 		this.route('new');
 	});
@@ -21,10 +19,10 @@ App.AboutRoute = Ember.Route.extend({
 	}
 });
 
-App.AboutEditRoute = Ember.Route.extend({
-	redirect: function() {
-		// return displayArray.title;
+// App.EditRoute = Ember.Route.extend({
+// 	redirect: function() {
+// 		// return displayArray.title;
 
-		return this.transitionTo('about.edit');
-	}
-});
+// 		return this.transitionTo('edit');
+// 	}
+// });

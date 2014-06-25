@@ -27,23 +27,16 @@
     <h1>This is the About page!</h1>
     <ul>
     {{#each}}
-    <li>{{#link-to 'about.edit' this}}{{title}}{{/link-to}}</li>
+    <li>{{#link-to 'edit' this}}{{title}}{{/link-to}}</li>
 
     {{/each}}
-    {{outlet}}
+
     </ul>
+    {{outlet}}
   </script>
-  <script type="text/x-handlebars" data-template-name="about/edit">
+  <script type="text/x-handlebars" data-template-name="edit">
       {{input type="text" value=title}}
   </script>
-  
-
-
-
-
-
-
-
 
   <script type="text/x-handlebars" data-template-name="favorite">
       <h1>This is the {{#link-to 'favorite.new'}}Favorite page{{/link-to}}!</h1>
@@ -52,6 +45,7 @@
   <script type="text/x-handlebars" data-template-name="favorite/new">
       <h1>This is the New Subscribe page!</h1>
   </script>
+
 
 </div>
   <script src="bower_components/jquery/dist/jquery.js"></script>

@@ -17,24 +17,22 @@
       {{input type="text" value=name placeholder="Your Name"}}
     </form>
       Hello, {{name}}!
-
-
   </script>
+
   <script type="text/x-handlebars" data-template-name="index">
     <h1>This is the Home page!</h1>
   </script>
+  
   <script type="text/x-handlebars" data-template-name="about">
     <h1>This is the About page!</h1>
     <ul>
     {{#each}}
-    <li>{{#link-to 'edit' id}}{{title}}{{/link-to}}</li>
-
-
+      <li>{{#link-to 'edit' id}}{{title}}{{/link-to}}</li>
     {{/each}}
-
     </ul>
     {{outlet}}
   </script>
+  
   <script type="text/x-handlebars" data-template-name="edit">
       {{input type="text" value=title}}
   </script>
@@ -43,10 +41,10 @@
       <h1>This is the {{#link-to 'favorite.new'}}Favorite page{{/link-to}}!</h1>
       {{outlet}}
   </script>
+ 
   <script type="text/x-handlebars" data-template-name="favorite/new">
       <h1>This is the New Subscribe page!</h1>
   </script>
-
 
 </div>
   <script src="bower_components/jquery/dist/jquery.js"></script>

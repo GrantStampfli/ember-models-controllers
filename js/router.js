@@ -16,13 +16,11 @@ var displayArray = [
 App.AboutRoute = Ember.Route.extend({
 	model: function() {
 		return displayArray;
-
 	}
 });
 
 App.EditRoute = Ember.Route.extend({
 	model: function(obj) {
-
 		return displayArray[obj.id-1];
 	}
 });

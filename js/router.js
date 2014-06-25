@@ -22,6 +22,7 @@ App.AboutRoute = Ember.Route.extend({
 
 App.AboutEditRoute = Ember.Route.extend({
 	redirect: function() {
+		// return displayArray.title;
 
 		return this.transitionTo('about.edit');
 	}

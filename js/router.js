@@ -16,13 +16,13 @@ var displayArray = [
 App.AboutRoute = Ember.Route.extend({
 	model: function() {
 		return displayArray;
+
 	}
 });
 
-// App.EditRoute = Ember.Route.extend({
-// 	redirect: function() {
-// 		// return displayArray.title;
+App.EditRoute = Ember.Route.extend({
+	model: function(obj) {
 
-// 		return this.transitionTo('edit');
-// 	}
-// });
+		return displayArray[obj.id-1];
+	}
+});

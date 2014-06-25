@@ -20,7 +20,13 @@ App.AboutRoute = Ember.Route.extend({
 });
 
 App.EditRoute = Ember.Route.extend({
-	model: function(obj) {
-		return displayArray[obj.id-1];
+	model: function(params) {
+		var obj;
+		displayArray.forEach(function(element) {
+			if (element.id === parseInt(params.id)) {
+				obj = element;
+			}
+		});
+		return obj;
 	}
 });
